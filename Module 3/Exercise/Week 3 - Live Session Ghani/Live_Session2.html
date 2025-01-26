@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 8px;
+        }
+        input{
+            display: block;
+        }
+        .radio{
+            display: inline;            
+        }
+        p{
+            color:red;
+            padding: 20px 10px;
+        }
+
+        .testclass
+        {
+            color:brown;
+        }
+        #label1{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to My Jijin's Site</h1>
+<p>This is my site and I will be posting pictures and videos about m cats and dogs</p>
+<figure>
+    <img src="./Images/lanscape_image.jpg" alt="Landscape Image" title="Landscape Image" width = "100%" >
+    <figcaption>Landscape Image</figcaption>
+    <img src="./Images/lanscape_image.jpg" alt="Landscape Image" title="Landscape Image" width = "500px" height="auto">
+</figure>
+<a href="http://google.com" target="_blank">Google</a>
+
+<form>
+    <label id="label1" class="testclass" for="fname">First Name:</label>
+    <input type="text" id="fname"  name ="fname" placeholder="John">
+    <label class="testclass" for="lname"> Last Name:</label>
+    <input type="text" id="lname" name="lname" placeholder="Smith">
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password" autocomplete="address-line1">
+    <br>
+    <!--Inline CSS-->
+    <label for="gender" style="color: blue;">Select Your Gender: </label>
+    <input type="radio" class= "radio" name="gender" value="Male"/> Male
+    <input type="radio" class= "radio" name="gender" value="Female"/> Female
+    <input type="color" name="ColorPick" id="colorPick"> Color Pick
+    <br>
+    <label for="favColor">Pick You favorite Color:</label>
+    <input type="checkbox" class= "radio" name="favColor" value="Yellow"> Yellow
+    <input type="checkbox" class= "radio" name="favColor" value="Green"> Green
+
+    <input type="submit">
+
+</form>
+
+
+</body>
+</html>

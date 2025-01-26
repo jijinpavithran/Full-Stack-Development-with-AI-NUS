@@ -1,0 +1,88 @@
+html{
+    font-size: 15px;
+}
+
+label{
+    color:green;
+}
+/* Attribute Selection based on ID starts with Division"*/
+  div[id^="Division"]
+  {
+    border: 2px solid blue;
+    padding: 10px;
+  }
+  /* Attribute Selection based on ID ends with "Sec"*/
+  div[id$="Sec"]
+  {
+    border: 1px dashed blueviolet;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+ /* Attribute Selection based on input type "submit"*/
+  input[type="submit"]{
+    color: blue;
+    width: 95%;
+    height: 40px;
+  }
+  input[type="text"]{
+    display: block;
+    width: 95%;
+  }
+
+
+ /* Pseudo Element Selection First Letter*/
+  p::first-letter{
+    font-style: oblique;
+    color: goldenrod;
+  }
+  
+   /* Pseudo Element Selection First Line*/
+    p::first-line{
+    background-color: aqua;
+  }
+
+  /* Remove all bullets Style*/
+li{
+    list-style: none;
+}
+/* Pseudo Element Selection: before each li*/
+li::before{
+content: ">>> ";
+}    
+
+/* Pseudo Element Selection: After each li*/
+#ul2 li::after{
+    content: " ###";
+    }
+
+
+a:link,
+a:active
+a:visited
+{
+    color: blue;
+    text-decoration: none;
+}  
+a:hover
+{
+    text-decoration: underline;
+    color: brown;
+}
+
+.container{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.absolute{ /*Move a position based on parent*/
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.fixed{ /*Fixed position in whole screen, not moved even when scroll*/
+    position: fixed;
+    top:1px;
+    left:10px;
+}

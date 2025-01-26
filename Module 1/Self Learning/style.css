@@ -1,0 +1,38 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 70;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: greenyellow;
+    border-color: wheat;
+    border-style: dotted;
+    border-radius: 10%;
+    cursor: pointer;
+}
+button:hover
+{
+    background-color: brown;
+}
+
+h1 {
+    color: darkblue;
+}
+h2 {
+    color: indigo;
+}
+h3 {
+    color: blue;
+}
+h4 {
+    color: blue;
+}
+h5 {
+    color: yellow;
+}
+h6 {
+    color: orange;
+}

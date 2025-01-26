@@ -1,0 +1,14 @@
+html{
+    font-size: 21px;
+    background-color: antiquewhite;
+}
+article
+{
+    font-style: italic;
+}
+tr, td, caption
+{
+    border: 1px solid black;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

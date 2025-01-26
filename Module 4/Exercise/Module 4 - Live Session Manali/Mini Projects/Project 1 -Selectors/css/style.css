@@ -1,0 +1,36 @@
+/* Global Selector */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /* Padding and Margin also can set here */
+}
+
+/*Element Selection*/
+body{
+    font-size: 22px;
+}
+p{
+    color: purple;
+}
+h1{
+    color:red;
+}
+
+
+/* Class Selectors*/
+.gray{
+    color:gray;
+}
+
+
+
+/*ID Selector*/
+#second{
+    font-style: italic;
+}
+
+/* Nested Selector */
+p span
+{
+    text-decoration: underline;
+}
+

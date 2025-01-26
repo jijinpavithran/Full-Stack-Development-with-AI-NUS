@@ -1,0 +1,28 @@
+/* Adding google font Roboto Example as Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  padding: 10%;
+  font-size: 1.5rem;
+  font-family: 'Roboto', 'sans-serif';
+}
+
+
+a
+{
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited{
+  color: purple;
+}
+
+a:hover, a:focus{
+  color:dodgerblue;
+}
+
+a:active
+{
+  color: red;
+}

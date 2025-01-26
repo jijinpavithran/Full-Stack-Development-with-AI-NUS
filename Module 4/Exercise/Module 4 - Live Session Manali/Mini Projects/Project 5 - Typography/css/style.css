@@ -1,0 +1,23 @@
+/* https://fonts.google.com/ */
+
+body{
+  padding: 10%;
+  font-size:2rem;
+  font-family: "Roboto", serif; /*Google font Added*/
+}
+
+input,button
+{
+  font:inherit
+}
+
+p{
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  word-spacing: 0.4em;
+  font-weight: 500;
+}

@@ -1,0 +1,10 @@
+body{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: papayawhip;
+    color: black;
+}
+
+p{
+    color:rgba(0, 0, 0, 0.7);
+}

@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
     background-color: #24252a;
+}
+
+body{
     font-size: 30px;
 }
 
@@ -72,7 +75,7 @@ footer p{
 
 article{
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 0.1px solid #ccc;
     border-radius: 10px;
 }
 
@@ -83,4 +86,12 @@ article ul li{
 article h3{
     color: crimson;
     font-size: medium;
+}
+
+h2{
+    color: #0088a9;
+}
+
+h1{
+    color: #ecf0f1;
 }

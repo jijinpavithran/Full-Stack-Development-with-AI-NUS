@@ -24,7 +24,6 @@
             <article id="outcome">
                 <h2>Learning Outcomes Addressed</h2>
                 <h3>After completing this assignment, you should be familiar with the following:</h3>
-                <br>
                 <ul>
                     <li>Understand and apply Semantic HTML</li>
                     <li>Understand modern CSS layout techniques</li>
@@ -34,7 +33,6 @@
             </article>
             <article id="tasks">
                 <h2>Tasks</h2>
-                <br>
                 <ul>
                     <li>To demonstrate an understanding of semantic HTML tags for improved SEO and accessibility. </li>
                     <li>To apply modern CSS layout techniques such as Flexbox or Grid to organise content effectively.</li>
@@ -44,10 +42,43 @@
         </article>
             <article id="instructions">
                 <h2>Submission Instructions</h2>
+                <ul>
+                    <li>Save the HTML and CSS files as <b>Module 4_Week 4_Required Assignment_[Your last name]</b></li>  
+                    <li>Make sure your HTML and CSS files include all required elements as specified above.</li>
+                </ul>
+                <br>
+                <h6>To submit your response:</h6>
+                <ul>
+                    <li>Click on the <b>Start Assignment</b> button at the top of this page to make your submission. 
+                    Upload the files.</li>
+                    <li>Click on <b>Submit Assignment.</b></li>
+                </ul>
+                <br>
+                <h6>Your submission will be considered complete when it meets these criteria:</h6>
+                <ul>
+                    <li>Includes all the critical elements outlined in the activity instructions and assessment criteria.</li>
+                    <li>Adheres to the submission guidelines.</li>
+                    <li>Is submitted on time.</li>
+                </ul>
             </article>    
 
             <article id="contact">
                 <h2>Contact</h2>
+                <div class="form-container">
+                    <div class="form-row">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="John Smith">
+                    </div> 
+                    <div class="form-row">
+                        <label for="email_id"> Email: </label>
+                        <input type="email" name="email_id" id="email_id" placeholder="abc@xyz.com">
+                    </div>
+                    <div class="form-row">
+                        <label for="response">Response: </label>
+                        <textarea id="response" name="response" rows="5"></textarea>
+                    </div>
+                    <input type="submit" onclick="FunSubmit()">
+                </div>
             </article>    
         </div>
         
@@ -56,5 +87,20 @@
         <a href="#">Goto Top</a>
         <p>Copyright &copy; to Jijin Pavithran Assignment 4 </p>
     </footer>
+
+    <script>
+        function FunSubmit() {
+            let x = document.getElementById("name").value;
+            let y = document.getElementById("email_id").value;
+            let z = document.getElementById("response").value;
+
+            if (x == "" || y == "" || z=="") 
+            {
+                alert("Please fill all values before submit!");
+                return false;
+            }
+          alert("Thanks for your Response"); 
+        }
+    </script>
 </body>
 </html>

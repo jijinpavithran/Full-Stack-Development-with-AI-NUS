@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 # 1. Introduction to NumPy and ndarray (8 Marks) 
     # a) Create a 2-dimensional NumPy array of shape (3, 3) with elements of type float64. 
     # b) Perform element-wise addition of the array with a scalar value of 10. 
@@ -73,33 +74,32 @@ print(df_filled_mean)
     # b) Add labels to the x-axis, y-axis, and a title. 
     # c) Customise the line plot by changing the colour, marker style, and line width. 
     # d) Create a scatter plot to show the relationship between two numerical variables (e.g., age vs. income).
-    import matplotlib.pyplot as plt
+
 
     # a) Create a simple line plot showing the change in the value of a variable over time (you can generate data).
-    time = np.arange(0, 10, 1)
-    value = np.sin(time)
-
-    plt.figure(figsize=(10, 5))
+time = np.arange(0, 10, 1)
+value = np.sin(time)
+plt.figure(figsize=(10, 5))
 
     # b) Add labels to the x-axis, y-axis, and a title.
-    plt.plot(time, value, color='blue', marker='o', linewidth=2, label='sin(time)')
-    plt.xlabel('Time')
-    plt.ylabel('Value')
-    plt.title('Change in Value over Time')
-    plt.legend()
+plt.plot(time, value, color='blue', marker='o', linewidth=2, label='sin(time)')
+plt.xlabel('Time')
+plt.ylabel('Value')
+plt.title('Change in Value over Time')
+plt.legend()
 
-    # c) Customise the line plot by changing the colour, marker style, and line width.
-    plt.grid(True)
-    plt.show()
+ # c) Customise the line plot by changing the colour, marker style, and line width.
+plt.grid(True)
+plt.show()
 
-    # d) Create a scatter plot to show the relationship between two numerical variables (e.g., age vs. income).
-    age = np.random.randint(20, 60, size=30)
-    income = np.random.randint(30000, 100000, size=30)
+ # d) Create a scatter plot to show the relationship between two numerical variables (e.g., age vs. income).
+age = np.random.randint(20, 60, size=30)
+income = np.random.randint(30000, 100000, size=30)
 
-    plt.figure(figsize=(10, 5))
-    plt.scatter(age, income, color='red', marker='x')
-    plt.xlabel('Age')
-    plt.ylabel('Income')
-    plt.title('Age vs. Income')
-    plt.grid(True)
-    plt.show()
+plt.figure(figsize=(10, 5))
+plt.scatter(age, income, color='red', marker='x')
+plt.xlabel('Age')
+plt.ylabel('Income')
+plt.title('Age vs. Income')
+plt.grid(True)
+plt.show()

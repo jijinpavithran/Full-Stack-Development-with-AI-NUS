@@ -1,0 +1,34 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.outter-box {
+    border: solid black 1px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 25%;
+    justify-content: center;
+    background-color: #ccc;
+}
+
+.user-name {
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: blue;
+    padding: 1%; /* Reduced padding */
+    margin: 0px;
+}
+
+p{
+    margin: 0px 0px 0px 20px;
+}
+

@@ -19,3 +19,5 @@ myvar = pd.DataFrame(mydataset, index=["day1", "day2", "day3"])
 print(myvar)
 
 
+
+

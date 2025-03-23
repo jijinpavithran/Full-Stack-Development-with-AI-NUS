@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Setup</title>
+    <!--Q2.a) Create an HTML file and include CDN links for React and ReactDOM.-->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="./GreetingComponent.js"></script>
+    <script type="text/babel" src="./Todo.js"></script>
+</head>
+
+<body>
+    <!--Q2.b) Add a <div> with an id of "root" in the HTML body.-->
+    <div id="root"></div>
+
+    <!-- Q2.c) Write a simple React component inside a <script> tag and use ReactDOM.render() to render it to the page. -->
+    <script type="text/babel">
+            function App() {
+                const todoItems = ["Learn React", "Build a React App", "Master React"];
+                return (
+                    <div>
+                        <h1>Hello World!</h1>
+                        <GreetingComponent fName = "Jijin"/>
+                        <Todo items={todoItems} />
+                    </div>
+                );
+            }
+
+        ReactDOM.render(
+            React.createElement(App),
+            document.getElementById('root')
+        );
+    </script>
+</body>
+</html>
